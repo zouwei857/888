@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>百度注册</title>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			body{
+				background-image: url(reg_bg_min.jpg);
+			}
+			.logo{
+				width: 150px;
+				height: 60px;
+				margin: 100px;
+				float: left;
+			}
+			.form-contant{
+				width: 400px;
+				height: 500px;
+				/*background-color: #FFF;
+				opacity: .9;*/
+				background-color: rgba(255,255,255,.9);
+				border-radius: 20px;
+				/*border-top: 1px solid transparent;*/
+				/*padding-top: 1px;*/
+				/*overflow: hidden;*/
+				float: left;
+				margin: 100px;
+				padding: 50px;
+				border: 1px solid #fff;
+			}
+			.form-contant h2{
+				margin-top: 10px;
+				font-size: 25px;
+				/*给父元素加一个上边框
+				给父元素上边加一个内边距
+				给父元素加overflow:hidden 属性
+				给父元素加浮动
+				*/
+			}
+			.form-contant>p{
+				color: #CCC;
+				margin-top: 20px;
+			}
+			.form-contant div{
+				margin-top: 20px;
+			}
+			.form-contant input{
+				width: 300px;
+				height: 40px;
+				border: 1px solid #CCC;
+				border-radius: 5px;
+				padding-left: 10px;
+				margin-left: 10px;
+			}
+			.form-contant span{
+				display: inline-block;
+				width: 70px;
+				text-align: right;
+			}
+			input[name=code]{
+				width: 120px;
+			}
+			input[type*=tt]{
+				140px
+			}
+			.denglu{
+				background-color: #9dc8ff;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="baidu.png" class="logo"/>
+		<div class="form-contant">
+			<h2>
+				欢迎注册
+			</h2>
+			<p>
+				已有账号？
+				<a href="#" >登录</a>
+			</p>
+			<form action="#" method="post" name="form1">
+				<div>
+					<span>用户名</span>
+					<input type="text" name="username" value="" placeholder="请输入用户名"/>
+				</div>
+				<div>
+					<span>密码</span>
+					<input type="password" placeholder="请输入密码"/>
+				</div>
+				<div>
+					<span>确认密码</span>
+					<input type="password" placeholder="请输入密码"/>
+				</div>
+				<div>
+					<span></span>
+					<input type="button" value="登录" class="denglu" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
