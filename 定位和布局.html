@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定位和布局</title>
+		<style>
+			/*
+			浮动
+			left right 行内块元素
+			脱离标准流 元素原来的位置会被后面的元素占领
+			*/
+		   .box1{
+			   background-color: #00ffff;
+		   }
+		   .box2{
+			   height: 200px;
+			   width: 200px;
+			   background-color: #1f898b;
+			   float: left;
+		   }
+		   .box3{
+			   height: 100px;
+			   background-color: #19c936;
+		   }
+		   .box2:first-child{
+			   position: absolute;
+			  /* left: 200px;
+			   top: 200px; */
+			   width: 100px;
+			   height: 100px;
+			   background-color: #000;
+		   }
+		   .clear{
+			   clear: both;
+		   }
+		   .box1::after{
+			   content: "";
+			   display: block;
+			   clear: both;
+		   }
+		  /* 清除浮动
+		   1.在子元素的后面加一个空的div标签,加上clear:both;属性 
+		  */
+		/* position 定位
+		 statit 默认
+		 relative 相对定位
+		 absolute 绝对定位
+		 fixed 固定定位
+		 
+		 relative 相对定位
+		 在不添加任何偏移值时 元素不会发生改变
+		  
+		  
+		  偏移值
+		  left*/
+		 
+		</style>
+	</head>
+	<body>
+		<!-- >后面写嵌套元素
+		+后面写兄弟元素
+		.后面写class #后面写id
+		[att=value]写标签的属性
+		*n重复
+		$自增 -->
+		<div class="box1">
+			<div class="box2"></div>
+			<div class="box2"></div>
+			<div class="clear"></div>
+		</div>
+		<div class="box3"></div>
+	</body>
+</html>
